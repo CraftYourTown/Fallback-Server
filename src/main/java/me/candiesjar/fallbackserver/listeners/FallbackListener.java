@@ -94,11 +94,11 @@ public class FallbackListener implements Listener {
                     BungeeMessages.FALLBACK_DELAY.getInt(), 0, TimeUnit.SECONDS);
         }
 
-        if (BungeeConfig.ADMIN_NOTIFICATION.getBoolean()) {
-
-            ProxyServer.getInstance().getPlayers().stream().filter(all -> )
-
-        }
+//        if (BungeeConfig.ADMIN_NOTIFICATION.getBoolean()) {
+//
+//            ProxyServer.getInstance().getPlayers().stream().filter(all -> )
+//
+//        }
 
         ProxyServer.getInstance().getScheduler().runAsync(instance, () -> plugin.getProxy().getPluginManager().callEvent(new FallbackAPI(player, kickedFrom, serverInfo, BaseComponent.toLegacyText(event.getKickReasonComponent()))));
     }
